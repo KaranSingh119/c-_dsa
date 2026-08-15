@@ -15,7 +15,7 @@ public:
                 rp-- ;
             }
         }  
-       
-    return maxw;
+
+    return maxw;    
     }
 };
