@@ -10,7 +10,7 @@ public:
             int area =w *h;
             maxw=max(area , maxw);
             if(height[lp]<height[rp]){
-            lp++ ;
+                lp++ ;
             }else{
                 rp-- ;
             }
