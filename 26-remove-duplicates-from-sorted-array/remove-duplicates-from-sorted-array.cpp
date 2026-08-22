@@ -1,7 +1,7 @@
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        int total=0 ;
+        
         int n= nums.size();
         int sp=1 ;
         
