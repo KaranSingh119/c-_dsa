@@ -28,11 +28,6 @@ public:
             }else{
                 end= mid-1 ;
             }
-            // if (nums[mid]<nums[mid-1]){
-            // end= mid-1;
-            // }else{
-            //     st=mid+1 ;
-            // }
         }
         return -1;    
     }        
