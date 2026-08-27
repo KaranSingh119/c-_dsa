@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isvalied(vector<int> &nums ,int k,int m,int maxpage){
         int stu=1 ,page=0 ;
-        for (int i =0 ;i<k ; i++){
+        for (int i =0 ;i<m ; i++){
             if (nums[i]> maxpage){
                 return false ;
             }
@@ -13,7 +13,7 @@ public:
                 page= nums[i] ;
             }
         }
-         return stu > m ? false : true ;
+         return stu > k ? false : true ;
     }
     int splitArray(vector<int>& nums, int k) {
         int sum=0;
@@ -26,7 +26,7 @@ public:
         while (start <= end){
             int mid= start +(end-start)/2 ;
 
-            if (isvalied(nums,nums.size(),k, mid)){
+            if (isvalied(nums,k,nums.size(), mid)){
                 ans=mid ;
                 end= mid-1;
             }else{
